@@ -1,0 +1,131 @@
+.fiveClass{
+    float: left;
+
+    background-color:#FFFFFF;
+    height: 60px;
+    width: 100%;
+    margin-top: 8px;
+
+}
+.onethClass{
+    float: left;
+    border-right: 1px solid rgba(13, 14, 7, 0.08);
+    width: 20%;
+    height: 60px;
+}
+.twothClass{
+    float: left;
+    border-right: 1px solid rgba(13, 14, 7, 0.08);
+    width: 20%;
+    height: 60px;
+}
+.threethClass{
+    float: left;
+    border-right: 1px solid rgba(13, 14, 7, 0.08);
+    width: 20%;
+    height: 60px;
+}
+.fourthClass{
+    float: left;
+    border-right: 1px solid rgba(13, 14, 7, 0.08);
+    width: 20%;
+    height: 60px;
+}
+.fifthClass{
+    float: left;
+    border-right: 1px solid rgba(13, 14, 7, 0.08);
+    width: 20%;
+    height: 60px;
+}
+
+.starNum{
+
+    background-color:#FFFFFF;
+    border-bottom:1px solid rgba(13, 14, 7, 0.08);
+    border-top:1px solid rgba(13, 14, 7, 0.08);
+    float: left;
+    height: 60px;
+    width: 100%;
+}
+.review{
+    clear: both;
+    width: 100%;
+    margin-top: 8px;
+    float: left;
+    border-top:1px solid rgba(13, 14, 7, 0.08);
+}
+.pictureCost{
+    background-color: #FFFFFF;
+    float: left;
+    width: 100%;
+    height: 150px;
+    border-top:1px solid rgba(13, 14, 7, 0.08);
+
+}
+.picture1{
+    float: left;
+}
+.picture2{
+    float: left;
+}
+.picture3{
+    float: left;
+}
+.addPicture{
+    padding:15px 15px 15px 15px;
+    margin: 5px 5px 5px  10px ;
+    width: 100px;
+    height: 100px;
+}
+.shareTab{
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+    height: 52px;
+    border-top:1px solid rgba(13, 14, 7, 0.08);
+}
+/*选择支付*/
+.pay{
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+    height: 60px;
+    border-top:1px solid rgba(13, 14, 7, 0.08);
+}
+.pay1{
+    background-color: #FFFFFF;
+
+    float: left;
+    width: 100%;
+    height: 60px;
+    border-top:1px solid rgba(13, 14, 7, 0.08);
+}
+
+.pay2{
+    background-color: #FFFFFF;
+
+    float: left;
+    width: 100%;
+    height: 60px;
+    border-top:1px solid rgba(13, 14, 7, 0.08);
+}
+/*用户评论页面*/
+.card .item.item-avatar {
+    min-height: 60px !important;
+    padding-left: 88px;
+}
+.card .icon+.icon {
+    padding-left: 0rem !important;
+}
+.evaluate_pic{
+    width: 46px;
+    height: 46px;
+}
+/*评论照片的样式*/
+.colSelf{
+    margin-right: 3px;
+}
+
+

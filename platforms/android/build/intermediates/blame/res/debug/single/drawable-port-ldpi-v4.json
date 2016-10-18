@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\ionic_project\\testUploadPic\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-port-ldpi-v4\\screen.png",
+        "source": "E:\\ionic_project\\testUploadPic\\platforms\\android\\res\\drawable-port-ldpi\\screen.png"
+    },
+    {
+        "merged": "E:\\ionic_project\\HaHaTravel\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-port-ldpi-v4\\screen.png",
+        "source": "E:\\ionic_project\\HaHaTravel\\platforms\\android\\res\\drawable-port-ldpi\\screen.png"
+    },
+    {
+        "merged": "E:\\webstorm_workspace\\HaHaTravel\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-port-ldpi-v4\\screen.png",
+        "source": "E:\\webstorm_workspace\\HaHaTravel\\platforms\\android\\res\\drawable-port-ldpi\\screen.png"
+    }
+]

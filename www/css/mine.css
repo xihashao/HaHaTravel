@@ -1,0 +1,90 @@
+#mine_top{
+    height:150px;
+    background:#00E3E3;
+}
+/* 头像*/
+.head_image{
+width:55px;
+height:55px;
+border-radius:50px;
+}
+
+div #head{
+position:relative;
+top:80px;
+left:20px;
+float:left;
+}
+
+div #name{
+position: relative;
+top:97px;
+left:40px;
+float: left;
+font-size: large;
+font-family: 微软雅黑;
+color: #FFFFFF;
+}
+
+/*评价*/
+#estimate{
+position:relative;
+width:50%;
+height: 40px;
+float: left;
+background: #00CACA;
+border-right: 1px solid white;
+}
+
+/*收藏*/
+#collect{
+position:relative;
+height: 40px;
+width:50%;
+float:left;
+background:#00CACA;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*设置评价的位置*/
+a.a_estimate{
+    line-height: 40px;
+}
+
+/*设置收藏的位置*/
+a.a_collect{
+    line-height: 40px;
+}
+
+/*间隔*/
+ #null{
+     position: relative;
+     width: 100%;
+     height: 10px;
+     float: left;
+     background: #d9edf7;
+}
+ #null1{
+     position: relative;
+     width: 100%;
+     height: 2px;
+     float: left;
+     background: #000000;
+ }
+ #null2{
+     position: relative;
+     width: 100%;
+     top:120px;
+     height:450px;
+
+     background: whitesmoke;
+ }
+a #login_back{
+    position: relative;
+    top:20px;
+}
+
+

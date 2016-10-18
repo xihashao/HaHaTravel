@@ -1,0 +1,73 @@
+<ion-view view-title="团购详情">
+    <ion-header-bar align-title="center" class="bar-light">
+        <button  class="button button-icon button-clear icon ion-ios-arrow-back" ng-click="back()" style="color: #00E3E3" ></button>
+        <h1 class="title "style="text-align: center">团购详情</h1>
+        <button href="" class="button button-icon button-clear icon ion-ios-star-outline" style="color: #00E3E3" ></button>
+
+    </ion-header-bar>
+
+    <ion-content >
+        <div class="item item-image">
+             <div class="business_detail_image"><img src="images/2.jpg"></div>
+             <div class="business_name"><a style="color: #FFFFFF">{{artical.title}}</a></div>
+        </div>
+        <!--<div class="item item-button-right">-->
+            <!--<div><a style="font-size: larger;color: #00E3E3">¥{{artical.goods.price}}</a>&nbsp&nbsp<a style="font-size: small">门市价：¥123</a></div>-->
+            <!--<button class="button button-positive"ng-click="buyTravel()" >-->
+                <!--立即抢购-->
+            <!--</button>-->
+        <!--</div>-->
+        <div class="null"></div>
+        <div class="item  " href="#">
+            <i class="icon ion-ios-star" style="color: #e6b400" ng-if="artical.star>=0&&artical.star<=1"></i>
+            <i class="icon ion-ios-star" style="color: #e6b400" ng-if="artical.star>1&&artical.star<2"></i>
+            <i class="icon ion-ios-star" style="color: #e6b400" ng-if="artical.star>2&&artical.star<3"></i>
+            <i class="icon ion-ios-star" style="color: #e6b400" ng-if="artical.star>3&&artical.star<4"></i>
+            <i class="icon ion-ios-star" style="color: #e6b400" ng-if="artical.star>4&&artical.star<5"></i>
+
+            <a>{{artical.star}}分</a>
+
+            <span class="item-note">
+             <a  href="#/list_evaluate/{{articleId}}">全部评价></a>
+            </span>
+        </div>
+        <div class="item item-icon-left" href="#">
+            <i class="icon ion-ios-telephone" ></i>
+            预约电话：<a ng-click="showPhoneSheet()">{{artical.phone}}</a>
+        </div>
+        <div class="item ">
+            <h4>供应商信息</h4>
+            <h2>{{artical.author}}</h2>
+            <h2>{{artical.address}}</h2>
+            <a  class="icon-left ion-ios-location-outline" href="#/business_map">{{artical.distance}}km</a>
+            </div>
+        </div>
+
+        <!--产品的item-->
+        <div class="list" style="margin-bottom: 0px;margin-top: 10px">
+
+            <!--<a class="item item-thumbnail-left " ng-repeat="business in articalList.list" href="#/travel_detail/{{business.article.id}}" >-->
+            <a class="item item-thumbnail-left item-button-right " style=" border-top: 1px solid rgba(87, 43, 43, 0.13);min-height: 70px !important;padding-left: 80px;padding-top: 7px;padding-bottom: 0px"  ng-repeat="item in articalItem">
+                <img class="business_image" src="images/2.jpg" style="top: 7px;">
+                <div class="item-body item-change-overflow" style="width: 150px">
+                    <h3 style="width: 150px;margin-top: 5px !important;">{{item.title}}</h3>
+                </div>
+
+
+                <p style="width: 150px;margin-top: 10px;color:  #adaead;font-style: normal;font-family: "Courier New", "宋体""><i style="color: #02c69e;font-size: medium">￥{{item.price}}</i> 门市价:￥{{item.price*item.discount}}</p>
+                <button class="button button-positive" style="font-size: small;top: 18px;padding-left: 6px;padding-right: 6px" ng-click="toBuy(artical.title,item.price,item.articleId,item.id)">立即购买</button>
+            </a>
+
+
+        </div>
+
+        <div class="item item-body" style="margin-top: 10px">
+            <h4 style="margin-top: 0px;padding-bottom: 6px;margin-bottom: 0px; border-bottom: 1px solid rgba(87, 43, 43, 0.13);color: #adaead">购买须知</h4>
+
+            <p style="font-family: 'Courier New', '宋体';font-style: normal;color: #0a0b0a">{{artical.content}}
+            </p>
+        </div>
+
+
+    </ion-content>
+</ion-view>

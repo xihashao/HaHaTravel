@@ -1,0 +1,77 @@
+<ion-modal-view >
+    <ion-header-bar align-title="center" class="bar-light">
+        <div class="buttons">
+            <button class="button button-icon button-clear icon ion-ios-arrow-back" ng-click="back()"></button>
+        </div>
+        <h1 class="title">支付订单</h1>
+        <!--<div class="buttons">-->
+            <!--<button ng-click="openRegisterModal()" class="button button-icon button-clear" style=><a style="color: #00E3E3" >确定</a></button>-->
+
+        <!--</div>-->
+    </ion-header-bar>
+
+
+    <ion-content style="background-color: rgba(67, 68, 75, 0.07)">
+        <div class="list" style="margin-top: 8px">
+            <a class="item item-avatar">
+                <img src="images/2.jpg" style="width: 50px;height: 50px">
+                <h2>¥196</h2>
+                <p>单人自助披萨</p>
+            </a>
+        </div>
+
+        <div class="pay" >
+            <div style="width: 50px;height: 50px;float: left">
+                <img src="images/weixin.jpg"  style="width: 30px;height: 30px;margin-top: 16px;margin-left: 15px">
+            </div>
+            <div style="float: left;width: 200px;height: 49px;background-color: #FFFFFF;margin-left: 10px">
+
+                    <h4 style="margin-top: 12px;margin-bottom: 5px">微信支付</h4>
+                    <h9 style="margin-bottom: 2px">推荐安装微信5.0以上版本的用户使用</h9>
+            </div>
+            <div class="checkbox" style="float: left;width: 50px;height: 49px;background-color: #FFFFFF;margin-right: 5px;left: 24px" ng-click="chosePay(1)">
+                <input type="checkbox"style="margin-top: 5px" ng-model="order.weixin">
+            </div>
+
+        </div>
+
+        <div class="pay1" >
+            <div style="width: 50px;height: 50px;float: left">
+                <img src="images/yinlian.jpg"  style="width: 35px;height: 35px;margin-top: 13px;margin-left: 12px">
+            </div>
+            <div style="float: left;width: 200px;height: 49px;background-color: #FFFFFF;margin-left: 10px">
+
+                <h4 style="margin-top: 12px;margin-bottom: 5px">银行卡支付</h4>
+                <h9 style="margin-bottom: 2px">支持储蓄卡信用卡，无需开通网银</h9>
+
+
+            </div>
+            <div class="checkbox" style="float: left;width: 50px;height: 49px;background-color: #FFFFFF;margin-right: 5px;left: 24px" ng-click="chosePay(2)">
+                <input type="checkbox"style="margin-top: 5px" ng-model="order.yinlian">
+            </div>
+
+        </div>
+        <div class="pay2" >
+            <div style="width: 50px;height: 50px;float: left">
+                <img src="images/zhifubao.jpg"  style="width: 30px;height: 30px;margin-top: 16px;margin-left: 15px">
+            </div>
+            <div style="float: left;width: 200px;height: 49px;background-color: #FFFFFF;margin-left: 10px">
+
+                <h4 style="margin-top: 12px;margin-bottom: 5px">支付宝支付</h4>
+                <h9 style="margin-bottom: 2px">推荐有支付宝账号的用户使用</h9>
+
+
+            </div>
+            <div class="checkbox" style="float: left;width: 50px;height: 49px;background-color: #FFFFFF;margin-right: 5px;left: 24px" ng-click="chosePay(3)">
+                <input type="checkbox"style="margin-top: 5px" ng-model="order.zhifubao">
+            </div>
+
+        </div>
+        <!--<div class="col" style="margin-top: 20px">-->
+            <!--<button class="button  button-block " style="background: #e3952a;color: #FFFFFF" ng-click="submitOrder()" >确认支付 &nbsp; ¥198 </button>-->
+        <!--</div>-->
+        <div class="col  " style="margin-top: 8px;float: left">
+            <button class="button  button-block " style="background: #e3a82b;color: #FFFFFF" ng-click="pay()" >确认支付 &nbsp; ¥196</button>
+        </div>
+    </ion-content>
+    </ion-modal-view >

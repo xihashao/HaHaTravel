@@ -1,0 +1,21 @@
+<ion-view>
+
+
+
+    <ion-content >
+
+        <div class="mapBack" >
+            <div  class="icon ion-ios-arrow-back " style="color: #FFFFFF;width: 10px;width: 10px" ng-click="back()"></div>
+        </div>
+        <div class="mapMy">
+            <div  class=" icon ion-navigate " style="color: #FFFFFF;width: 10px;width: 10px" ng-click="centerOnMe()"></div>
+        </div>
+        <div class="businessInfo">
+            <h4 style="margin-left: 10px;color: #212121;font-family: "Courier New", "宋体"">中国国际旅行社</h4>
+            <p style="margin-left: 10px;color: rgba(1, 2, 1, 0.32)">青羊区八宝街万通分社C坐8楼</p>
+        </div>
+
+        <map on-create="mapCreated(map)" latitude=30.663422  longitude=104.072222></map>
+    </ion-content>
+
+</ion-view>

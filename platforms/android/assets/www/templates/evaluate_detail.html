@@ -1,0 +1,150 @@
+<ion-view>
+
+    <ion-header-bar align-title="center" class="bar-light">
+        <button  class="button button-icon button-clear icon ion-ios-arrow-back" style="color: #02c69e" ng-click="back()" ></button>
+        <h1 class="title" style ="color: rgba(7, 6, 7, 0.76);text-align: center">荣升和火锅</h1>
+        <button  class="button button-icon button-clear " style="color: #02c69e" ng-click="commitReview()">发布</button>
+
+    </ion-header-bar>
+
+    <ion-content style="background-color: rgba(67, 68, 75, 0.07)">
+         <div class="fiveClass" >
+             <div class="onethClass" ng-click="choseClass(1)">
+                 <h5 style="text-align: center">差</h5>
+                 <div style="text-align: center" ng-switch="evaluate.oneMark">
+                 <a class="icon  ion-social-octocat " style="font-size: x-large" ng-switch-when="false"></a>
+                 <a class="icon  ion-social-octocat " style="font-size: x-large;color: #0bb697" ng-switch-when="true"></a>
+                 </div>
+
+             </div>
+             <div class="twothClass" ng-click="choseClass(2)">
+                 <h5 style="text-align: center">一般</h5>
+                 <div style="text-align: center"  ng-switch="evaluate.twoMark">
+                     <a class="icon  ion-social-octocat " style="font-size: x-large" ng-switch-when="false"></a>
+                     <a class="icon  ion-social-octocat " style="font-size: x-large;color: #0bb697" ng-switch-when="true"></a>
+                 </div>
+                 <div>
+
+                 </div>
+             </div>
+             <div class="threethClass" ng-click="choseClass(3)">
+                 <h5 style="text-align: center">满意</h5>
+                 <div style="text-align: center" ng-switch="evaluate.threeMark">
+                     <a class="icon  ion-social-octocat " style="font-size: x-large" ng-switch-when="false"></a>
+                     <a class="icon  ion-social-octocat " style="font-size: x-large;color: #0bb697" ng-switch-when="true"></a>
+                 </div>
+             </div>
+             <div class="fourthClass" ng-click="choseClass(4)">
+                 <h5 style="text-align: center">很满意</h5>
+                 <div style="text-align: center" ng-switch="evaluate.fourMark">
+                     <a class="icon  ion-social-octocat " style="font-size: x-large" ng-switch-when="false"></a>
+                     <a class="icon  ion-social-octocat " style="font-size: x-large;color: #0bb697" ng-switch-when="true"></a>
+                 </div>
+             </div>
+             <div class="fifthClass" ng-click="choseClass(5)">
+                 <h5 style="text-align: center">强烈推荐</h5>
+                 <div style="text-align: center" ng-switch="evaluate.fiveMark">
+                     <a class="icon  ion-social-octocat " style="font-size: x-large" ng-switch-when="false"></a>
+                     <a class="icon  ion-social-octocat " style="font-size: x-large;color: #0bb697" ng-switch-when="true"></a>
+                 </div>
+             </div>
+
+         </div>
+        <div class="starNum"  style="text-align: center;color: #ffcb63" ng-if="evaluate.oneMark">
+            <div style="padding-top: 8px">
+                <a class="icon ion-ios-star"style="font-size: xx-large" ></a>
+            </div>
+
+        </div>
+        <div class="starNum"  style="text-align: center;color: #ffcb63" ng-if="evaluate.twoMark">
+            <div style="padding-top: 8px">
+                <a class="icon ion-ios-star"style="font-size: xx-large" ></a>
+                <a class="icon ion-ios-star"style="font-size: xx-large" ></a>
+            </div>
+
+        </div>
+        <div class="starNum"  style="text-align: center;color: #ffcb63" ng-if="evaluate.threeMark">
+            <div style="padding-top: 8px">
+                <a class="icon ion-ios-star"style="font-size: xx-large" ></a>
+                <a class="icon ion-ios-star"style="font-size: xx-large" ></a>
+                <a class="icon ion-ios-star"style="font-size: xx-large" ></a>
+            </div>
+
+        </div>
+        <div class="starNum"  style="text-align: center;color: #ffcb63" ng-if="evaluate.fourMark">
+            <div style="padding-top: 8px">
+                <a class="icon ion-ios-star"style="font-size: xx-large" ></a>
+                <a class="icon ion-ios-star"style="font-size: xx-large" ></a>
+                <a class="icon ion-ios-star"style="font-size: xx-large" ></a>
+                <a class="icon ion-ios-star"style="font-size: xx-large" ></a>
+            </div>
+
+        </div>
+        <div class="starNum"  style="text-align: center;color: #ffcb63" ng-if="evaluate.fiveMark">
+            <div style="padding-top: 8px">
+                <a class="icon ion-ios-star"style="font-size: xx-large" ></a>
+                <a class="icon ion-ios-star"style="font-size: xx-large" ></a>
+                <a class="icon ion-ios-star"style="font-size: xx-large" ></a>
+                <a class="icon ion-ios-star"style="font-size: xx-large" ></a>
+                <a class="icon ion-ios-star"style="font-size: xx-large" ></a>
+            </div>
+
+        </div>
+        <div class="review">
+            <label class="item item-input" >
+                <textarea placeholder="菜品如何，服务周到吗，环境如何？(写够15字，才是好同志！)" style="height: 100px" ng-model="evaluate.content"></textarea>
+            </label>
+        </div>
+        <div class="pictureCost">
+            <div style="padding-left: 4px;padding-top: 4px">
+                <span>人均消费：¥<input  placeholder="请输入优惠钱的价格" style="border: 1px solid rgba(13, 14, 7, 0.08);margin-left: 10px;margin-top: 10px"></span>
+            </div>
+            <div>
+                <div class="picture1" ng-repeat="item in images_list.srcList" >
+                   <img src="{{item}}" class="addPicture" ng-click="pickImage(1)"  >
+
+
+                </div>
+                <!--<div class="picture2" >-->
+                    <!--<img src="images/add.png" class="addPicture" ng-click="pickImage(2)"  ng-if="isShow2">-->
+                    <!--<img src="images_list[1]" class="addPicture" ng-click="pickImage(2)"  ng-if="!isShow2">-->
+                <!--</div>-->
+                <!--<div class="picture3">-->
+                    <!--<img src="images/add.png" class="addPicture" ng-click="pickImage(3)"  ng-if="isShow3">-->
+                    <!--<img src="images_list[2]" class="addPicture" ng-click="pickImage(3)"  ng-if="!isShow3">-->
+                <!--</div>-->
+
+
+
+            </div>
+
+        </div>
+        <!--<div class="shareTab" >-->
+            <!--<div style="width: 50px;height: 50px;float: left">-->
+                <!--<img src="images/share.png" >-->
+            <!--</div>-->
+            <!--<div style="float: left;width: 200px;height: 49px;background-color: #FFFFFF">-->
+                <!--<div style="margin-top: 17px">-->
+                    <!--<a>一键同步到微信，与好友分享</a>-->
+                <!--</div>-->
+
+            <!--</div>-->
+            <!--<div class="checkbox" style="float: left;width: 50px;height: 49px;background-color: #FFFFFF;margin-left: 40px">-->
+                <!--<input type="checkbox"style="margin-top: 5px">-->
+            <!--</div>-->
+
+            <!--&lt;!&ndash;<label class="checkbox" style="padding-right: 2px">&ndash;&gt;-->
+                <!--&lt;!&ndash;<input type="checkbox">&ndash;&gt;-->
+            <!--&lt;!&ndash;</label>&ndash;&gt;-->
+
+        <!--</div>-->
+
+    </ion-content>
+
+
+
+
+
+
+
+</ion-view>

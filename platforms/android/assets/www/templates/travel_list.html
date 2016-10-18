@@ -1,0 +1,117 @@
+<ion-view>
+
+    <ion-header-bar align-title="center" class="bar-light" style="float:left">
+        <button  class="button button-icon button-clear icon ion-ios-arrow-back" style="color: #02c69e" ng-click="back()" ></button>
+        <h1 class="title" style ="color: #02c69e;text-align: center" ng-switch="mark.channelId">
+          <a ng-switch-when="175" >旅游商家列表</a>
+          <a ng-switch-when="183" >酒店商家列表</a>
+          <a  ng-switch-when="192" >美食商家列表</a>
+        </h1>
+        <button ng-click="openResearchModal()" class="button button-icon button-clear icon ion-android-search" style="color: #02c69e"></button>
+
+    </ion-header-bar>
+    <div class="" style="margin-top: 45px;">
+
+        <a class=" button button-smaller  button-clear  icon-right ion-android-arrow-dropdown" ng-click="openPopover($event)" style="background:#FFFFFF;color: #000000;font-family: 'Courier New', '宋体';font-size: small;padding-top: 0px;width: 49%">
+            <div ng-switch="mark.px">
+                <div ng-switch-when="pg">评价最高</div>
+                <div ng-switch-when="jd"> 价格最低</div>
+                <div ng-switch-when="rq">人气最高</div>
+                <div ng-switch-when="jg">价格最高</div>
+                <div ng-switch-default>智能排序</div>
+            </div>
+        </a>
+        <a class=" button button-clear  icon-right ion-android-arrow-dropdown" style="background:#FFFFFF;color: #000000;font-family: 'Courier New', '宋体';font-size: small;padding-top: 0px;width: 48%">筛选</a>
+    </div>
+    <ion-content style="margin-top: 47px">
+         <!--下拉刷新-->
+        <ion-refresher 	on-refresh="doRefresh()" spinner="android" distance="10%">
+        </ion-refresher>
+
+
+        <!--商家列表-->
+        <div class="list" style="border:1px solid rgba(0, 0, 0, 0.11);">
+
+
+            <a class="item item-thumbnail-left " ng-repeat="business in articalList.list" href="#/travel_detail/{{business.article.id}}" style=" border-top: 1px solid rgba(87, 43, 43, 0.13);min-height: 80px !important;padding-left: 80px;padding-top: 7px;padding-bottom: 0px" >
+                <img class="business_image" src="images/2.jpg">
+                <div class="item-body item-change-overflow">
+                   <h3>{{business.article.title}}</h3>
+                </div>
+
+                <p>{{business.article.description}}</p>
+                <p><i style="color: #02c69e;font-size: medium">¥{{business.article.goods.price}}</i>起</p>
+            </a>
+
+
+
+
+        </div>
+    </ion-content>
+
+    <script id="chose-popover.html" type="text/ng-template">
+        <ion-popover-view >
+            <div class="list">
+
+                <label class="item item-radio" ng-click="order('zn')" >
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        智能排序
+                    </div>
+                    <i class="radio-icon ion-checkmark" style="color: #02c69e"></i>
+                </label>
+                <label class="item item-radio" ng-click="order('pg')">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        评价最高
+                    </div>
+                    <i class="radio-icon ion-checkmark"style="color: #02c69e"></i>
+                </label>
+                <label class="item item-radio" ng-click="order('jd')">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        价格最低
+                    </div>
+                    <i class="radio-icon ion-checkmark" style="color: #02c69e"></i>
+                </label>
+                <label class="item item-radio" ng-click="order('jg')">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        价格最高
+                    </div>
+                    <i class="radio-icon ion-checkmark" style="color: #02c69e"></i>
+                </label>
+                <label class="item item-radio" ng-click="order('rq')">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        人气最高
+                    </div>
+                    <i class="radio-icon ion-checkmark" style="color: #02c69e"></i>
+                </label>
+
+
+            </div>
+        </ion-popover-view>
+    </script>
+     <!--搜索modal-->
+    <script id="research.html" type="text/ng-template">
+        <ion-modal-view >
+            <ion-header-bar align-title="center" class=" item-input-inset" style="background: #00E3E3">
+                <button class="button button-icon button-clear icon ion-ios-arrow-back" ng-click="closeResearchModal()"></button>
+                <label class="item-input-wrapper">
+                    <input class="light-bg" type="text" placeholder="请输入商家">
+                </label>
+            </ion-header-bar>
+
+            <ion-content>
+
+            </ion-content>
+        </ion-modal-view>
+
+
+    </script>
+
+
+
+
+</ion-view>

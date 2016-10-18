@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\ionic_project\\HaHaTravel\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\anim\\image_pop_in.xml",
+        "source": "E:\\ionic_project\\HaHaTravel\\platforms\\android\\res\\anim\\image_pop_in.xml"
+    },
+    {
+        "merged": "E:\\ionic_project\\testUploadPic\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\anim\\image_pop_in.xml",
+        "source": "E:\\ionic_project\\testUploadPic\\platforms\\android\\res\\anim\\image_pop_in.xml"
+    },
+    {
+        "merged": "E:\\webstorm_workspace\\HaHaTravel\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\anim\\image_pop_in.xml",
+        "source": "E:\\webstorm_workspace\\HaHaTravel\\platforms\\android\\res\\anim\\image_pop_in.xml"
+    }
+]

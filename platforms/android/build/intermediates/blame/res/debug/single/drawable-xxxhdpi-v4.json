@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\ionic_project\\HaHaTravel\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon.png",
+        "source": "E:\\ionic_project\\HaHaTravel\\platforms\\android\\res\\drawable-xxxhdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\webstorm_workspace\\HaHaTravel\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon.png",
+        "source": "E:\\webstorm_workspace\\HaHaTravel\\platforms\\android\\res\\drawable-xxxhdpi\\icon.png"
+    },
+    {
+        "merged": "E:\\ionic_project\\testUploadPic\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\icon.png",
+        "source": "E:\\ionic_project\\testUploadPic\\platforms\\android\\res\\drawable-xxxhdpi\\icon.png"
+    }
+]

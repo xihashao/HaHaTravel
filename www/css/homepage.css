@@ -1,0 +1,60 @@
+.oddActivity{
+    float: left;
+    width: 50%;
+    height: 55px;
+    margin-top: 10px;
+    border-right: 1px solid rgba(87, 43, 43, 0.13);
+
+}
+img[class="activityCircle"]{
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+    margin-right: 20px;
+    border-radius:50%;
+
+}
+.evenActivity{
+    float: right;
+    width: 50%;
+    height: 55px;
+    margin-top: 10px;
+
+
+}
+.leftPosition{
+
+    float: left;
+    height: 110px;
+    width:50%;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    border-top: 1px solid rgba(87, 43, 43, 0.13);
+    border-bottom: 1px solid rgba(87, 43, 43, 0.13);
+    border-right: 1px solid rgba(87, 43, 43, 0.13);
+}
+.rightPosition1{
+
+    width:50%;
+    background-color: #FFFFFF;
+    float: left;
+    height: 55px;
+    margin-top: 10px;
+    border-top: 1px solid rgba(87, 43, 43, 0.13);
+    border-bottom: 1px solid rgba(87, 43, 43, 0.13);
+
+
+}
+.rightPosition2{
+
+    width:50%;
+    background-color: #FFFFFF;
+    float: left;
+    height: 55px;
+    border-bottom: 1px solid rgba(87, 43, 43, 0.13);
+
+
+
+}
+

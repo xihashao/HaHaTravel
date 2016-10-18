@@ -1,0 +1,188 @@
+<ion-view>
+    <ion-content >
+        <!--头像和ID -->
+         <div id="mine_top" >
+             <div id="head"><img class="head_image" src="images/0.jpg" /></div>
+             <div id="name" ng-model="user.state" ng-switch on="user.state">
+                 <a ng-switch-default style="color: #f8f8f8;font-family: Ionicons" ng-click="openLoginModal()">请点击登录</a>
+                 <a ng-switch-when="true" style="color: #f8f8f8;font-size: larger">{{user.nickname}}</a>
+             </div>
+         </div>
+
+        <!--评价和收藏-->
+        <!--<div  id="estimate"><a class="a_estimate" style="color: #FFFFFF ">评价</a></div>-->
+        <div  style="text-align: center" id="estimate"><a class="a_estimate" style="color: #FFFFFF ">评价</a></div>
+        <div style="text-align: center" id="collect"><a class="a_collect" style="color: #FFFFFF">收藏</a></div>
+
+        <div id="null"></div>
+
+        <!--我的订单和待付款-->
+         <div id="mine_order">
+              <!--待付款-->
+             <div class="list">
+                 <a class="item item-icon-left" href="#">
+                     <i class="icon ion-android-list"></i>
+                     我的订单
+                     <span class="item-note">查看全部订单></span>
+
+
+                 </a>
+
+             </div>
+
+             <div class="item tabs tabs-secondary tabs-icon-top">
+                     <a class="tab-item" href="#">
+                      <i class="icon ion-ios-briefcase-outline"></i>
+                      待使用
+                     </a>
+                     <a class="tab-item" href="#/to_evaluate_list">
+                      <i class="icon ion-ios-chatboxes-outline"></i>
+                      待评价
+                     <span class="badge badge-assertive">3</span>
+                 </a>
+                 <a class="tab-item" href="#">
+                     <i class="icon ion-card"></i>
+                     待付款
+                 </a>
+             </div>
+             <div class="list">
+                 <a class="item item-icon-left" href="#/modify_password">
+                     <i class="icon ion-ios-unlocked-outline"></i>
+                     修改密码
+                     <span class="item-note">></span>
+                 </a>
+
+
+                 <a class="item item-icon-left" href="#/modify_nickname">
+                     <i class="icon icon ion-ios-person-outline"></i>
+                     修改昵称
+                     <span class="item-note">></span>
+                 </a>
+             </div>
+
+         </div>
+         <div id="mine_list"></div>
+
+        <!--用户登陆modal-->
+        <script id="userLogin.html" type="text/ng-template">
+            <ion-modal-view >
+                <ion-header-bar align-title="center" class="bar-light">
+                    <div class="buttons">
+                        <button class="button button-icon button-clear icon ion-ios-arrow-back" ng-click="closeLoginModal()"></button>
+                    </div>
+                    <h1 class="title">登录</h1>
+                    <div class="buttons">
+                        <button ng-click="openRegisterModal()" class="button button-icon button-clear" style=><a style="color: #00E3E3" >注册</a></button>
+
+                    </div>
+                </ion-header-bar>
+
+               <!--<ion-content>-->
+
+                    <!--<div class="list">-->
+                        <!--<label class="item item-input">-->
+                            <!--<input type="text" placeholder="邮箱" ng-model="inputUser.account">-->
+                        <!--</label>-->
+                        <!--<label class="item item-input">-->
+                            <!--<input type="text" placeholder="密码" ng-model="inputUser.password">-->
+                        <!--</label>-->
+
+                    <!--</div>-->
+                   <!--<button class=" button button-full button-calm" style="background: #00E3E3" ng-click="login()">-->
+                   <!--登录-->
+                   <!--</button>-->
+                   <!--<h4 style="color: #00E3E3">找回密码</h4>-->
+               <!--</ion-content>-->
+
+                <ion-content class="padding">
+
+                    <div class="row responsive-sm padding remvoeBP">
+                        <div class="col">
+                            <!--<div class="app-logo"><img src="img/logo.png"></div>-->
+
+                            <div class="list list-inset removePM">
+                                <label class="item item-input"><input type="text" ng-model="inputUser.account" placeholder="邮箱" > </label>
+                                <label class="item item-input"><input type="password" ng-model="inputUser.password" placeholder="密码" > </label>
+                            </div>
+
+                            <div class="loginButton"><button class="button ion-unlocked button-block " style="background: #00E3E3" ng-click="login();" > 登录 </button>  </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="row  padding removePM">-->
+                        <!--<div class="col"> <a class=" button-positive button button-block" ng-click="facebookSignIn()"><i class="icon ion-social-facebook"></i></a> </div>-->
+                        <!--<div class="col"> <a class="button-calm button button-block" ng-click="twitterSignIn()"><i class="icon ion-social-twitter"></i></a> </div>-->
+                    <!--</div>-->
+
+                </ion-content>
+            </ion-modal-view>
+
+
+        </script>
+        <!--用户注册modal-->
+        <script id="register.html" type="text/ng-template">
+            <ion-modal-view >
+                <ion-header-bar align-title="center" class="bar-light">
+                    <div class="buttons">
+                        <button class="button button-icon button-clear icon ion-ios-arrow-back" ng-click="closeRegisterModal()"></button>
+                    </div>
+                    <h1 class="title">注册</h1>
+
+                </ion-header-bar>
+
+                <ion-content>
+                    <div class="row responsive-sm padding remvoeBP">
+                    <div class="col">
+                    <div class="list">
+
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper">
+                                <input type="text" ng-model="newUser.account" placeholder="邮箱">
+                            </label>
+
+                            <button class="button  button-small" style="background: #00E3E3" ng-click="sendIdentifyCode()" >
+                                <a  style="color: #FFFFFF ">发送验证码</a>
+                            </button>
+                        </div>
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper">
+                                <input type="text" ng-model="newUser.inputValidateCode" placeholder="邮箱验证码">
+                            </label>
+
+                        </div>
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper">
+                                <input type="text" ng-model="newUser.password"  placeholder="密码">
+                            </label>
+
+                        </div>
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper">
+                                <input type="text" ng-model="newUser.confirmPassword"  placeholder="确认密码">
+                            </label>
+
+                        </div>
+
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper">
+                                <input type="text"ng-model="newUser.nickname"  placeholder="用户昵称">
+
+                            </label>
+
+                        </div>
+                        <div class="loginButton"><button class="button ion-person  button-block " style="background: #00E3E3" ng-click="addNewUser();" > 注册 </button>  </div>
+                        <!--<button class=" button button-block  button-calm" style="background: #00E3E3" ng-click="addNewUser()">-->
+                            <!--注册-->
+                        <!--</button>-->
+                    </div>
+                        </div>
+                        </div>
+                </ion-content>
+            </ion-modal-view>
+
+
+        </script>
+
+
+    </ion-content>
+</ion-view>

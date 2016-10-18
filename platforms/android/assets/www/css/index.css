@@ -1,0 +1,141 @@
+ion-content{                         /* 设置页面布局，内边距*/
+    /*padding: 20px 15px;*/
+    font-family: SimHei;
+    font-size: 10px;
+    color:#535353 ;
+
+}
+.img{
+	width:100%;
+	height: auto;
+}
+.card, .list-inset {
+    background-color: #fff;
+    border-radius: 2px;
+    margin: 3px 0px;
+    overflow: hidden;
+}
+
+.spinner svg {
+  width: 19% !important;
+  height: 85px !important;
+}
+.spinner{
+	text-align: center;
+}
+
+.item-avatar{
+	padding-left: 2px;
+}
+/*头像圆形和居中
+*/
+.myinfo {
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    background: #c9394a;
+}
+.avatar {
+    text-align: center;
+    overflow: hidden;
+    border-radius:50%;
+}
+/*自由行图标的位置*/
+.free-icon-div{
+    position:absolute;
+    left:30px;
+    top:0px;
+    height:80px;
+    width:50px;
+    z-index:2
+}
+/*.free-icon{*/
+    /*float:left;*/
+    /*height:80px;*/
+    /*width:50px;*/
+    /*z-index:2*/
+/*}*/
+
+
+/*点赞div*/
+.heart1{
+    position:absolute;
+    background-color: #1e1e1e;
+    right:10px;
+    bottom:15px;
+    width:70px;
+    height:40px;
+    border-radius: 5px ;
+    /*filter:alpha(opacity=60);*/
+    opacity:0.85
+}
+/*心*/
+.heart{
+    position: absolute;
+    left: 12px;
+    top:6px ;
+    /*控制心形图片 大小*/
+    font-size: 25px;
+
+}
+.heart1 p{
+    position: absolute;
+    left: 40px;
+    top:9px;
+    /*font-size: 200px;*/
+    color: #ffffff;
+}
+/*悬浮的button*/
+#floatingButton{
+    position:absolute;
+    /*right:10px;*/
+    /*background-color: #E65100;*/
+    /*margin: 0 auto;*/
+    width: 300px;
+    height:48px;
+    left:50%;
+    top:88%;
+    margin:0 0 0 -150px;
+
+    z-index:2;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: SimHei ;
+    text-align :center;
+    border-radius: 20px ;
+    line-height: 60px;
+    opacity:0.85
+
+}
+/*筛选按钮*/
+.odd{
+    float:left;
+    left: 20px;
+    width: 135px;
+    height: 48px;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: 10px;
+    background-color: #ef4e3a;
+    color: #000000;
+    font-size: 15px;
+    font-family: SimHei ;
+    text-align :center;
+    border-radius: 20px ;
+    line-height: 50px;
+}
+.even{
+    float:left;
+    left: 20px;
+    width: 135px;
+    height: 48px;
+    margin-right: 20px;
+    margin-top: 10px;
+    background-color: #ef4e3a;
+    color: #000000;
+    font-size: 15px;
+    font-family: SimHei ;
+    text-align :center;
+    border-radius: 20px ;
+    line-height: 50px;
+}

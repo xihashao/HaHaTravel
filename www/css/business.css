@@ -1,0 +1,69 @@
+/*商家类型*/
+#business_type{
+    position:relative;
+    width:33.3%;
+    height: 40px;
+    float: left;
+    background: #FFFFFF;
+    border-right: 1px solid rgba(45, 22, 22, 0.3);
+    border-bottom: 1px solid rgba(45, 22, 22, 0.3);
+}
+
+/*商家距离*/
+#business_distance{
+    position:relative;
+    height: 40px;
+    width:33.3%;
+    float:left;
+    background: #FFFFFF;
+    border-right: 1px solid rgba(45, 22, 22, 0.3);
+    border-bottom: 1px solid rgba(45, 22, 22, 0.3);
+}
+/*商家智能排序*/
+#business_order{
+    position:relative;
+    height: 40px;
+    width:33.3%;
+    float:left;
+    background:#FFFFFF;
+    border-bottom: 1px solid rgba(45, 22, 22, 0.3);
+}
+.top_chose{
+    position: relative;
+    top:40px;
+}
+.item-thumbnail-left img{
+    border-radius: 0%;
+}
+.business_image{
+    width:55px !important;
+    height:55px !important;
+
+}
+.business_detail_image{
+    position: relative;
+}
+.business_name{
+    position: absolute;
+    bottom:15px;
+    left: 10px;
+    height:30px;
+    line-height:30px;
+
+}
+.null{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    float: left;
+    background: #000000;
+}
+.item-change-overflow{
+    overflow: auto!important;
+    padding: 0px!important;
+}
+.item-change-overflow h3{
+    padding: 0px!important;
+    margin-top: 0px!important;
+}
+/*首页活动的图片的位置*/

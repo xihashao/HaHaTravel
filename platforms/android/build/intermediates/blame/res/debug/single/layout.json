@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "E:\\webstorm_workspace\\HaHaTravel\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\multiselectorgrid.xml",
+        "source": "E:\\webstorm_workspace\\HaHaTravel\\platforms\\android\\res\\layout\\multiselectorgrid.xml"
+    },
+    {
+        "merged": "E:\\webstorm_workspace\\HaHaTravel\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar_custom_view_done_discard.xml",
+        "source": "E:\\webstorm_workspace\\HaHaTravel\\platforms\\android\\res\\layout\\actionbar_custom_view_done_discard.xml"
+    },
+    {
+        "merged": "E:\\ionic_project\\testUploadPic\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar_custom_view_done_discard.xml",
+        "source": "E:\\ionic_project\\testUploadPic\\platforms\\android\\res\\layout\\actionbar_custom_view_done_discard.xml"
+    },
+    {
+        "merged": "E:\\ionic_project\\testUploadPic\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar_discard_button.xml",
+        "source": "E:\\ionic_project\\testUploadPic\\platforms\\android\\res\\layout\\actionbar_discard_button.xml"
+    },
+    {
+        "merged": "E:\\webstorm_workspace\\HaHaTravel\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar_discard_button.xml",
+        "source": "E:\\webstorm_workspace\\HaHaTravel\\platforms\\android\\res\\layout\\actionbar_discard_button.xml"
+    },
+    {
+        "merged": "E:\\ionic_project\\HaHaTravel\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\multiselectorgrid.xml",
+        "source": "E:\\ionic_project\\HaHaTravel\\platforms\\android\\res\\layout\\multiselectorgrid.xml"
+    },
+    {
+        "merged": "E:\\ionic_project\\testUploadPic\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar_done_button.xml",
+        "source": "E:\\ionic_project\\testUploadPic\\platforms\\android\\res\\layout\\actionbar_done_button.xml"
+    },
+    {
+        "merged": "E:\\ionic_project\\HaHaTravel\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar_done_button.xml",
+        "source": "E:\\ionic_project\\HaHaTravel\\platforms\\android\\res\\layout\\actionbar_done_button.xml"
+    },
+    {
+        "merged": "E:\\ionic_project\\HaHaTravel\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar_discard_button.xml",
+        "source": "E:\\ionic_project\\HaHaTravel\\platforms\\android\\res\\layout\\actionbar_discard_button.xml"
+    },
+    {
+        "merged": "E:\\webstorm_workspace\\HaHaTravel\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar_done_button.xml",
+        "source": "E:\\webstorm_workspace\\HaHaTravel\\platforms\\android\\res\\layout\\actionbar_done_button.xml"
+    },
+    {
+        "merged": "E:\\ionic_project\\testUploadPic\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\multiselectorgrid.xml",
+        "source": "E:\\ionic_project\\testUploadPic\\platforms\\android\\res\\layout\\multiselectorgrid.xml"
+    },
+    {
+        "merged": "E:\\ionic_project\\HaHaTravel\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout\\actionbar_custom_view_done_discard.xml",
+        "source": "E:\\ionic_project\\HaHaTravel\\platforms\\android\\res\\layout\\actionbar_custom_view_done_discard.xml"
+    }
+]

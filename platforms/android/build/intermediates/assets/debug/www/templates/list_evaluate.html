@@ -1,0 +1,69 @@
+<ion-modal-view >
+    <ion-header-bar align-title="center" class="bar-light">
+        <div class="buttons">
+            <button class="button button-icon button-clear icon ion-ios-arrow-back" ng-click="back()"></button>
+        </div>
+        <h1 class="title">用户评论</h1>
+        <!--<div class="buttons">-->
+            <!--<button ng-click="openRegisterModal()" class="button button-icon button-clear" style=><a style="color: #00E3E3" >确定</a></button>-->
+
+        <!--</div>-->
+    </ion-header-bar>
+
+
+    <ion-content style="background-color: rgba(67, 68, 75, 0.07)">
+        <div class="list card" ng-repeat="evaluateItem in evaluateItems" >
+
+            <div class="item item-avatar" style="height: 30px" >
+                <img src="images/2.jpg">
+                <h2 style="color: #ffb54d">{{evaluateItem.comment.user.nickname}}</h2>
+
+                <p>
+                    <a class="icon ion-ios-star"style="font-size: smaller;color: #ffb54d" ></a>
+                    <a class="icon ion-ios-star"style="font-size: smaller;color: #ffb54d" ></a>
+                    <a class="icon ion-ios-star"style="font-size: smaller;color: #ffb54d" ></a>
+                    <a class="icon ion-ios-star"style="font-size: smaller" ></a>
+                    {{evaluateItem.comment.createTime}}
+                </p>
+            </div>
+
+            <div class="item  item-body" style="padding-top: 0px">
+                <p style="margin-top: 0px;margin-bottom: 0px">
+                   {{evaluateItem.comment.content}}
+                </p>
+                <div class="row">
+                    <div class="colSelf"  ng-repeat="image in evaluateItem.images" >
+
+                        <img class="evaluate_pic" src="http://192.168.1.100:8080/boat/u/hhdiyou//1467166797515-6877.jpg" ng-click="showImage(image)">
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!--显示具体图片的modal-->
+        <script id="showImage.html" type="text/ng-template">
+            <ion-modal-view >
+
+
+
+                <ion-content  style="background-color: #212121">
+
+                    <div class="showImage">
+                        <img src="{{ImageToShow.src}}" style="width:100%;height: 300px;margin-top: 45%" ng-click="closeShowModal()">
+                    </div>
+
+
+                </ion-content>
+            </ion-modal-view>
+
+
+        </script>
+
+    </ion-content>
+    </ion-modal-view >

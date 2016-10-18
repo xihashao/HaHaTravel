@@ -1,0 +1,126 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:2:98-146
+		INJECTED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml
+		INJECTED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:2:70-97
+		INJECTED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml
+		INJECTED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml
+	android:hardwareAccelerated
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:2:11-45
+	android:versionCode
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:2:46-69
+		INJECTED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml
+		INJECTED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:2:147-205
+supports-screens
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:3:5-191
+	android:largeScreens
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:3:49-76
+	android:smallScreens
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:3:132-159
+	android:normalScreens
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:3:77-105
+	android:xlargeScreens
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:3:160-188
+	android:resizeable
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:3:106-131
+	android:anyDensity
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:3:23-48
+application
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:4:5-14:19
+	android:label
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:4:83-115
+	android:supportsRtl
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:4:116-142
+	android:hardwareAccelerated
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:4:18-52
+	android:icon
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:4:53-82
+activity#com.ionicframework.testuploadpic445308.MainActivity
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:5:9-10:20
+	android:label
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:5:97-134
+	android:launchMode
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:5:135-165
+	android:windowSoftInputMode
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:5:257-299
+	android:configChanges
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:5:19-96
+	android:theme
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:5:194-256
+	android:name
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:5:166-193
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:6:13-9:29
+	android:label
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:6:28-65
+action#android.intent.action.MAIN
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:7:17-69
+	android:name
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:7:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:8:17-77
+	android:name
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:8:27-74
+activity#com.synconset.MultiImageChooserActivity
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:11:9-163
+	android:label
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:11:19-57
+	android:theme
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:11:113-160
+	android:name
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:11:58-112
+activity#com.alipay.sdk.app.H5PayActivity
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:12:9-246
+	android:screenOrientation
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:12:154-188
+	android:exported
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:12:81-105
+	android:windowSoftInputMode
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:12:189-243
+	android:configChanges
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:12:19-80
+	android:name
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:12:106-153
+activity#com.alipay.sdk.auth.AuthActivity
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:13:9-191
+	android:screenOrientation
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:13:154-188
+	android:exported
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:13:81-105
+	android:configChanges
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:13:19-80
+	android:name
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:13:106-153
+uses-sdk
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:15:5-74
+MERGED from [android:CordovaLib:unspecified:debug] E:\webstorm_workspace\HaHaTravel\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\AndroidManifest.xml:25:5-44
+	android:targetSdkVersion
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:15:42-71
+	android:minSdkVersion
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:15:15-41
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:16:22-78
+uses-permission#android.permission.INTERNET
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:17:5-67
+	android:name
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:17:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:18:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:19:5-76
+	android:name
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:19:22-73
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:20:5-75
+	android:name
+		ADDED from E:\webstorm_workspace\HaHaTravel\platforms\android\AndroidManifest.xml:20:22-72

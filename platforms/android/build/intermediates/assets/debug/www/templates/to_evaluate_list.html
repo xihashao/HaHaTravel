@@ -1,0 +1,34 @@
+<ion-view>
+
+    <ion-header-bar align-title="center" class="bar-light">
+        <button  class="button button-icon button-clear icon ion-ios-arrow-back" style="color: #02c69e" ng-click="back()" ></button>
+        <h1 class="title" style ="color: rgba(7, 6, 7, 0.76);text-align: center">待评价</h1>
+        <button ng-click="isEdit()" class="button button-icon button-clear " style="color: #02c69e">编辑</button>
+
+    </ion-header-bar>
+
+    <ion-content >
+
+        <ion-list show-delete="evaluate.isEdit">
+            <!--<ion-item ng-repeat="item in items" class="item-thumbnail-left">-->
+            <ion-item class="item-thumbnail-left">
+
+                <img ng-src="">
+                <h2>荣升和火锅代金券</h2>
+                <p>数量：1</p>
+                <p>价格：80 &nbsp;&nbsp;&nbsp;<button style="border:1px solid #ffd714;background-color: #FFFFFF;color:#ffd714;" ><a href="#/evaluate_detail/924" style="color:#ffd714">评价</a></button></p>
+
+                <ion-delete-button class="ion-minus-circled" ng-click=""></ion-delete-button>
+
+
+            </ion-item>
+        </ion-list>
+    </ion-content>
+
+
+
+
+
+
+
+</ion-view>

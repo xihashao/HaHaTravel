@@ -1,0 +1,162 @@
+
+
+<ion-view view-title="首页" >
+    <ion-header-bar align-title="center" class=" item-input-inset  bar-positive" >
+        <!--<a class="button button-clear " style="padding-left: 0px;color: #fcfcfc;font-family: 'Courier New', '宋体';font-size:15px;text-align: center;margin:0px">迪拜</a>-->
+        <button class="button button-icon button-clear icon " style="color: #ffffff" ng-click="" >迪拜</button>
+        <label class="item-input-wrapper">
+        <input class="light-bg" type="text" placeholder="请输入商家" ng-click="toFind()">
+        </label>
+    </ion-header-bar>
+
+
+    <!--<div class="scroll-content has-header" style="background-color: #eaeaea">-->
+    <ion-content style="background-color: rgba(67, 68, 75, 0.07)" >
+
+      <!--下拉刷新-->
+      <ion-refresher 	on-refresh="doRefresh()" spinner="android" distance="10%">
+      </ion-refresher>
+
+        <div class="row" style="padding-left: 0px ;padding-right: 0px;padding-bottom: 0px ;padding-top: 0px ;margin-top: 3px " >
+            <a class="col  light-bg black"  href="#/travel_list/192" style="">
+                <img style="width: 33px;height: 33px;margin-left: 37%" src="images/meishi.png" />
+
+                <div style="text-align: center;font-size: 14px">美食</div>
+
+            </a>
+            <a class="col   light-bg black" href="#/travel_list/183">
+                <img style="width: 33px;height: 33px;margin-left: 37%" src="images/jiudian.png" />
+
+                <div style="text-align: center;font-size: 14px">酒店</div>
+
+            </a>
+            <a class="col   light-bg black" href="#/travel_list/175" >
+                <img style="width: 33px;height: 33px;margin-left: 37%" src="images/lvyou.png" />
+
+                <div style="text-align: center;font-size: 14px">旅游</div>
+            </a>
+        </div>
+        <!--<div class="row" style="padding-left: 0px;padding-right: 0px ;margin-left: 0px;margin-top: 3px;height: 30%;padding-bottom: 0px">-->
+            <!--<a class="col " style="padding-left: 0px;padding-right: 0px" href="" >-->
+                <!--<img  src="images/qianggou.jpg" style="width: 100%;height:100px;margin-bottom: 0px" />-->
+
+
+            <!--</a>-->
+            <!--<a class="col" style="margin-left:0px;padding-right: 0px;padding-left: 0px" href="" >-->
+                <!--<img  src="images/huodong2.jpg" style="width: 100%;height:100px;margin-bottom: 0px" />-->
+
+
+
+            <!--</a>-->
+        <!--</div>-->
+        <!--广告位- 名店抢购-天天特价-买单立减-->
+
+        <div class="leftPosition">
+            <h4 style="margin-left: 30px;color: #e47d0d ;margin-bottom: 0px;margin-top: 4px;padding-top: 1px;font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif">
+                名店抢购
+            </h4>
+            <img src="images/0.jpg" style="width: 55px;height: 35px;margin-left: 40px">
+            <p style="margin-bottom: 0px;margin-top: 0px;padding-left: 33px;font-size: small;font-family: " Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif">西式自助餐</h5>
+            <p style="color: #00c9c9;padding-left: 45px;font-size: small">￥98</p>
+        </div>
+        <div class="rightPosition1">
+
+            <h4 style="margin-bottom: 0px;margin-left: 10px;color: #ffa418">天天特惠</h4>
+            <p style="margin-left: 12px">特价不打烊</p>
+            <img src="images/0.jpg" style="position: absolute;width: 45px;height: 45px;top: 85px;right: 25px;border-radius:50%;" >
+
+        </div>
+        <div class="rightPosition2">
+
+            <h4 style="margin-bottom: 0px;margin-left: 10px;color: #52bdff">买单立减</h4>
+            <p style="margin-left: 9px">一元起享用优惠</p>
+            <img src="images/0.jpg" style="position: absolute;width: 45px;height: 45px;top: 140px;right: 25px;border-radius:50%;" >
+
+        </div>
+
+
+        <!-- 活动-->
+        <div>
+            <div class="oddActivity light-bg" >
+                <img  class="activityCircle" src="images/huodong2.jpg"/>
+                <h4 style="color: #e08f24;padding-left: 9px;margin-bottom: 0px" >美食排行</h4>
+                <p style="padding-left: 9px">总能找到你爱</p>
+
+            </div>
+            <div class="evenActivity light-bg"  >
+                <img class="activityCircle" src="images/huodong2.jpg"  />
+                <h4 style="color: #3091ff;padding-left: 10px;margin-bottom: 0px">省者为王</h4>
+                <p style="padding-left: 12px">超值特惠哦</p>
+            </div>
+        </div>
+
+        <div class="list" style="margin-bottom: 4px">
+            <a class="item item-icon-left" href="#" style="top: 10px;padding-top: 5px;padding-bottom: 5px;font-size: small;padding-left: 40px;color: #000000">
+                <i class="icon ion-ios-heart" style="font-size: large;color: rgba(239, 10, 20, 0.84)"></i>
+                美食推荐
+            </a>
+        </div>
+        <!--美食推荐5家-->
+        <div class="list" style="border:1px solid rgba(0, 0, 0, 0.11);margin-bottom: 0px">
+
+          <a class="item item-thumbnail-left " style=" border-top: 1px solid rgba(87, 43, 43, 0.13);min-height: 70px !important;padding-left: 80px;padding-top: 7px;padding-bottom: 0px" ng-repeat="item in recommendFood" href="#/travel_detail/{{item.article.id}}">
+            <img class="business_image" src="images/2.jpg" style="top: 7px;">
+            <div class="item-body item-change-overflow">
+              <h3>{{item.article.title}}</h3>
+            </div>
+
+            <p>{{item.article.description}}</p>
+            <p><i style="color: #02c69e;font-size: medium">¥189</i>起</p>
+          </a>
+
+        </div>
+
+        <div class="list" style="margin-bottom: 4px">
+            <a class="item item-icon-left" href="#" style="top: 10px;padding-top: 5px;padding-bottom: 5px;font-size: small;padding-left: 40px;color: #b97152">
+                <i class="icon ion-ios-heart" style="font-size: large;color: rgba(239, 10, 20, 0.84)"></i>
+                酒店推荐
+            </a>
+        </div>
+        <!--酒店推荐5家-->
+        <div class="list" style="border:1px solid rgba(0, 0, 0, 0.11);margin-bottom: 0px">
+
+          <a class="item item-thumbnail-left " style=" border-top: 1px solid rgba(87, 43, 43, 0.13);min-height: 70px !important;padding-left: 80px;padding-top: 7px;padding-bottom: 0px" ng-repeat="item in recommendHotel" href="#/travel_detail/{{item.article.id}}" >
+            <img class="business_image" src="images/2.jpg" style="top: 7px;">
+            <div class="item-body item-change-overflow">
+              <h3>{{item.article.title}}</h3>
+            </div>
+
+            <p>{{item.article.description}}</p>
+            <p><i style="color: #02c69e;font-size: medium">¥189</i>起</p>
+          </a>
+
+        </div>
+        <div class="list" style="margin-bottom: 4px">
+            <a class="item item-icon-left" href="#" style="top: 10px;padding-top: 5px;padding-bottom: 5px;font-size: small;padding-left: 40px;color: #482dc9">
+                <i class="icon ion-ios-heart" style="font-size: large;color:rgba(239, 10, 20, 0.84)"></i>
+                旅游推荐
+            </a>
+        </div>
+        <!--旅游推荐5家-->
+        <div class="list" style="border:1px solid rgba(0, 0, 0, 0.11);margin-bottom: 0px">
+
+            <!--<a class="item item-thumbnail-left " ng-repeat="business in articalList.list" href="#/travel_detail/{{business.article.id}}" >-->
+            <a class="item item-thumbnail-left " style=" border-top: 1px solid rgba(87, 43, 43, 0.13);min-height: 70px !important;padding-left: 80px;padding-top: 7px;padding-bottom: 0px" ng-repeat="item in recommendTourism" href="#/travel_detail/{{item.article.id}}" >
+                <img class="business_image" src="images/2.jpg" style="top: 7px;">
+                <div class="item-body item-change-overflow">
+                    <h3>{{item.article.title}}</h3>
+                </div>
+
+                <p>{{item.article.description}}</p>
+                <p><i style="color: #02c69e;font-size: medium">¥189</i>起</p>
+            </a>
+
+
+        </div>
+
+
+
+
+    </ion-content>
+</ion-view>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\ionic_project\HaHaTravel\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6978d0bfb0883fbac30024d026228679dd5726d2">
+        <dex dex="E:\ionic_project\HaHaTravel\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_a2f8550e6b80af56696c0ff150a3369644a2dff6.jar" />
+    </item>
+    <item
+        jar="E:\webstorm_workspace\HaHaTravel\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d1c4c401bd9895693166b7fc986cc952edb10bd3">
+        <dex dex="E:\webstorm_workspace\HaHaTravel\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_de09b2b956a5a41dafb82cdd035a0f379731ed7c.jar" />
+    </item>
+    <item
+        jar="E:\ionic_project\testUploadPic\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="33506a7c6663981ad64153ef19a15c029f8a3a45">
+        <dex dex="E:\ionic_project\testUploadPic\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_069397c0e026ea87b10fe5b1a8aa570fd2696bdf.jar" />
+    </item>
+    <item
+        jar="E:\webstorm_workspace\HaHaTravel\platforms\android\libs\alipaysdk.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ff0f8e55a08ddd28e1fa8e94e2d8881264a5f345">
+        <dex dex="E:\webstorm_workspace\HaHaTravel\platforms\android\build\intermediates\pre-dexed\debug\alipaysdk_d3e87c0cb762afbcc81bedf6af84965e0fb58acf.jar" />
+    </item>
+
+</items>

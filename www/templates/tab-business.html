@@ -1,0 +1,50 @@
+<ion-view>
+    <ion-header-bar align-title="center" class="bar-positive">
+        <h1 class="title">全部商家</h1>
+    </ion-header-bar>
+
+    <ion-content >
+
+      <!--下拉刷新-->
+      <ion-refresher 	on-refresh="doRefresh()" spinner="android" distance="10%">
+      </ion-refresher>
+
+        <!--<div  style="text-align: center" id="business_type"><a class="a_estimate" style="color: #000000 ">旅游</a></div>-->
+        <!--<div style="text-align: center" id="business_distance"><a class="a_collect" style="color: #000000">3km</a></div>-->
+        <!--<div style="text-align: center" id="business_order"><a class="a_collect" style="color: #000000">智能排序</a></div>-->
+
+        <!--&lt;!&ndash;商家列表&ndash;&gt;-->
+        <!--<div class="list">-->
+
+           <!---->
+            <!--<a class="item item-thumbnail-left " ng-repeat="business in articalList.list" href="#/travel_detail/{{business.id}}" >-->
+                <!--<img class="business_image" src="images/2.jpg">-->
+                <!--<div class="item-body item-change-overflow">-->
+                   <!--<h3>{{business.article.title}}</h3>-->
+                <!--</div>-->
+
+                <!--<p>{{business.article.description}}</p>-->
+                <!--<p><i style="color: #02c69e;font-size: medium">¥{{business.article.goods.price}}</i>起</p>-->
+            <!--</a>-->
+
+
+        <!--</div>-->
+
+      <div class="list" style="border:1px solid rgba(0, 0, 0, 0.11);">
+
+
+        <a class="item item-thumbnail-left " ng-repeat="business in allBusinessList.list" href="#/travel_detail/{{business.id}}" style=" border-top: 1px solid rgba(87, 43, 43, 0.13);min-height: 80px !important;padding-left: 80px;padding-top: 7px;padding-bottom: 0px" >
+          <img class="business_image" src="images/2.jpg">
+          <div class="item-body item-change-overflow">
+            <h3>{{business.article.title}}</h3>
+          </div>
+
+          <p>{{business.article.content}}</p>
+          <p><i style="color: #02c69e;font-size: medium">{{business.article.priceText}}</i>起</p>
+        </a>
+
+      </div>
+       <!--上拉刷新-->
+      <ion-infinite-scroll icon="ion-load-d"  on-infinite="loadMore()" distance="1%" ng-if="moreDataCanBeLoaded()"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

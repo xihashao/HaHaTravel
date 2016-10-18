@@ -1,0 +1,77 @@
+<ion-modal-view >
+    <ion-header-bar align-title="center" class="bar-light">
+        <div class="buttons">
+            <button class="button button-icon button-clear icon ion-ios-arrow-back" ng-click="back()"></button>
+        </div>
+        <h1 class="title">提交订单</h1>
+        <!--<div class="buttons">-->
+            <!--<button ng-click="openRegisterModal()" class="button button-icon button-clear" style=><a style="color: #00E3E3" >确定</a></button>-->
+
+        <!--</div>-->
+    </ion-header-bar>
+
+
+    <ion-content style="background-color: rgba(67, 68, 75, 0.07)">
+        <div class="list" style="margin-top: 8px">
+            <a class="item " >
+                <i></i>
+                {{order.title}}代金券
+                <span class="item-note">{{order.price}}元</span>
+            </a>
+
+            <a class="item " >
+                <i class=""></i>
+                数量
+                <span class="item-note">
+                    <div style="border:1px solid rgba(13, 14, 7, 0.08);width: 60px;height: 24px">
+                       <div ng-click="subNum()" style="border-right: 1px solid rgba(13, 14, 7, 0.08);width:17px;height: 23px ;float: left;text-align: center;color: #00c9c9">
+                           -
+                       </div>
+                        <div  style="border-right: 1px solid rgba(13, 14, 7, 0.08);width:24px;height: 23px;float: left ;text-align: center">
+                        {{order.number}}
+                        </div>
+                        <div  ng-click="addNum()" style="border-right: 1px solid rgba(13, 14, 7, 0.08);width:17px;height: 23px ;float: left;text-align: center;color: #00cdcd">
+                            +
+                        </div>
+                    </div>
+                </span>
+            </a>
+
+            <a class="item " href="">
+                <i class=""></i>
+                小计
+                <span class="item-note" style="color: #f41e14">¥{{order.price*order.number}}</span>
+            </a>
+        </div>
+        <div class="list" style="margin-top: 8px">
+            <a class="item " href="">
+                <i class=""></i>
+                抵用券
+                <span class="item-note">使用抵用券></span>
+            </a>
+
+            <a class="item " href="">
+                <i class=""></i>
+                订单总价
+                <span class="item-note">></span>
+            </a>
+        </div>
+        <div class="list" style="margin-top: 8px">
+            <a class="item " href="">
+                <i class=""></i>
+                您绑定的手机号码
+
+            </a>
+
+            <a class="item " href="">
+
+                189****6532
+                <span class="item-note">绑定新号码></span>
+            </a>
+            <div class="col  ">
+                <button class="button  button-block " style="background: #e3a82b;color: #FFFFFF" ng-click="submitOrder()" >提交订单 </button>
+            </div>
+        </div>
+
+    </ion-content>
+    </ion-modal-view >

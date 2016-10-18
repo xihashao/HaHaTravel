@@ -1,0 +1,29 @@
+
+
+<ion-view view-title="首页" >
+    <ion-header-bar align-title="center" class=" item-input-inset bar-positive">
+        <button class="button button-icon button-clear icon ion-ios-arrow-back" style="color: #ffffff" ng-click="back()" ></button>
+        <label class="item-input-wrapper">
+        <form ng-submit="findByName()"><input class="light-bg" type="text" placeholder="请输入商家" ng-model="form.data"></form>
+        </label>
+    </ion-header-bar>
+
+
+    <!--<div class="scroll-content has-header" style="background-color: #eaeaea">-->
+    <ion-content style="background-color: rgba(67, 68, 75, 0.07)" >
+      <div class="list" >
+
+        <a class="item item-thumbnail-left " style=" border-top: 1px solid rgba(87, 43, 43, 0.13);min-height: 70px !important;padding-left: 80px;padding-top: 7px;padding-bottom: 0px" ng-repeat="item in listFindItem" href="#/travel_detail/{{item.article.id}}">
+          <img class="business_image" src="images/2.jpg" style="top: 7px;">
+          <div class="item-body item-change-overflow">
+            <h3>{{item.article.title}}</h3>
+          </div>
+
+          <p>{{item.article.description}}</p>
+          <p><i style="color: #02c69e;font-size: medium">¥189</i>起</p>
+        </a>
+
+      </div>
+    </ion-content>
+</ion-view>
+
