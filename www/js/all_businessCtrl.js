@@ -12,31 +12,32 @@ angular.module('myApp.controllers')
     $scope.allBusinessList.list=[]; //存放list 的数组
     $scope.allBusinessList.page=1;//页数初始是1
 
-    // //获取所有商家
-    // $scope.getAllBusinessOne=function(){
-    //   $log.debug("getTravelList");
-    //   Artical.getAllBusinessOne($scope.allBusinessList.page).then(function(response){
-    //     console.log("controller的response的内容",response);
-    //     $scope.allBusinessList.list=response;
-    //
-    //
-    //   },function(err){
-    //
-    //   });
-    // };
+    //获取所有商家
+    $scope.getAllBusinessOne=function(){
+      $log.debug("getTravelList");
+      Artical.getAllBusinessOne($scope.allBusinessList.page).then(function(response){
+        console.log("controller的response的内容",response);
+        $scope.allBusinessList.list=response;
+
+
+      },function(err){
+
+      });
+    };
 
     $scope.getAllBusinessOne(); //首先获取第一页数据
 
-    $scope.$on('allBusiness.businessUpdated', function() {
-      // $timeout(function() {
-      $scope.portalListData = PortalsFactory.getPortals();
-      $scope.showloading=false
-      $scope.$broadcast('scroll.refreshComplete');
-      // }, 100);
-    });
+    // $scope.$on('allBusiness.businessUpdated', function() {
+    //   // $timeout(function() {
+    //   $scope.portalListData = PortalsFactory.getPortals();
+    //   $scope.showloading=false
+    //   $scope.$broadcast('scroll.refreshComplete');
+    //   // }, 100);
+    // });
 
     //下拉刷新
     $scope.doRefresh = function() {
+      console.log("下拉刷新！");
 
       $ionicBackdrop.retain();//保持背景幕
 
@@ -74,9 +75,9 @@ angular.module('myApp.controllers')
     }
 
     //释放背景幕
-    // $interval(function(){
-    //   $ionicBackdrop.release();
-    // },2000)
+    $interval(function(){
+      $ionicBackdrop.release();
+    },2000)
 
 
   });

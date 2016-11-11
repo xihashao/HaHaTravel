@@ -14,6 +14,9 @@ angular.module('myApp.services')
         //        }
         //    });
         //};
+
+        //用来存储 是否有下一页  下一页的页数  获取的数据
+        var  allBusiness={};
         //查询某个旅游类商家详情
         var getTravel_details = function(id,ulong,ulat){
             var serveurl = ENV.api+'/showItems.do';
@@ -70,9 +73,6 @@ angular.module('myApp.services')
 
             });
         };
-      //获取所有商家
-       var allBusienss={};
-
 
 
         return {
@@ -276,10 +276,14 @@ angular.module('myApp.services')
                 page:1      //第一页
               }
             }).then(function(response){
+              var hasNext=true;
               if(response.status==200) {
                 $log.debug('获得的所有文章第一页数据:', response);
-                allBusienss={                   //存储信息
-                  'hasNext':true,
+                if(response.data.length<20){
+                    hasNext=false;
+                }
+                allBusiness={                   //存储信息
+                  'hasNext':hasNext,
                   'businessDate':response.data,
                   'nextPage':2
                 }
@@ -295,19 +299,54 @@ angular.module('myApp.services')
             })
             return promise;
           },
-          //获取数据
-          getBusiness: function() {
-            if (allBusienss=== undefined) {
-              return false;
-            }
-            return allBusienss.businessDate;
-          },
+          // //获取数据
+          // getBusiness: function() {
+          //   if (allBusienss=== undefined) {
+          //     return false;
+          //   }
+          //   return allBusienss.businessDate;
+          // },
           getMoreBusiness:function(){
             var nextPage = allBusienss.nextPage;         //下一页的页数
             var hasNext = allBusienss.hasNext;         //是否还有下一页
             var portalsData = allBusienss.businessDate;      //下一页数据
 
+            var d = $q.defer();
+            var promise = d.promise;
+            var serveurl = ENV.api + '/article_listAll.json';
+            $http({
+              method:'GET',
+              url:serveurl,
+              //这个键的值是一个字符串map或对象，会被转换成查询字符串追加在URL后面。如果值不是字符串，会被JSON序列化。
+              params:{
+                isStar:1, //默认按照好评来排序
+                page:nextPage     //下一页
+              }
+            }).then(function(response){
+              if(response.status==200) {
+                $log.debug('获得的所有文章下一页的数据:', response);
+                portalsData=portalsData.concat(response.data);
+                console.log("第二页以及第二页之后的商家数据为："+portalsData);
+                if(response.data.length<20){
 
+                  hasNext=false;
+                }
+                allBusiness={                   //存储信息
+                  'hasNext':hasNext,
+                  'businessDate':portalsData,
+                  'nextPage':nextPage++
+                }
+                
+                d.resolve(response.data);
+              }
+              else{
+                d.reject("获取文章列表失败");
+              }
+            },function(err){
+              alert("获取文章列表失败");
+              d.reject(err);
+            })
+            return promise;
           },
         }
 

@@ -9,6 +9,11 @@
       <ion-refresher 	on-refresh="doRefresh()" spinner="android" distance="10%">
       </ion-refresher>
 
+      <div ng-if="showloading" style="margin-top:60px; text-align: center">
+
+        <ion-spinner icon="ios" style="height: 60px; width: 60px;;"></ion-spinner>
+      </div>
+
         <!--<div  style="text-align: center" id="business_type"><a class="a_estimate" style="color: #000000 ">旅游</a></div>-->
         <!--<div style="text-align: center" id="business_distance"><a class="a_collect" style="color: #000000">3km</a></div>-->
         <!--<div style="text-align: center" id="business_order"><a class="a_collect" style="color: #000000">智能排序</a></div>-->
