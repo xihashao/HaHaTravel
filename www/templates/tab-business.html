@@ -9,7 +9,7 @@
       <ion-refresher 	on-refresh="doRefresh()" spinner="android" distance="10%">
       </ion-refresher>
 
-      <div ng-if="showloading" style="margin-top:60px; text-align: center">
+      <div ng-if="false" style="margin-top:60px; text-align: center">
 
         <ion-spinner icon="ios" style="height: 60px; width: 60px;;"></ion-spinner>
       </div>
@@ -50,6 +50,6 @@
 
       </div>
        <!--上拉刷新-->
-      <ion-infinite-scroll icon="ion-load-d"  on-infinite="loadMore()" distance="1%" ng-if="moreDataCanBeLoaded()"></ion-infinite-scroll>
+      <ion-infinite-scroll icon="ion-load-d"  on-infinite="loadMore()" distance="1%" ng-if="moreDataCanBeLoaded()" immediate-check="true"></ion-infinite-scroll>
     </ion-content>
 </ion-view>

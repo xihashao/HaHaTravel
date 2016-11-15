@@ -1,6 +1,6 @@
 #mine_top{
     height:150px;
-    background:#00E3E3;
+    background: #3c82ff;
 }
 /* 头像*/
 .head_image{
@@ -32,7 +32,7 @@ position:relative;
 width:50%;
 height: 40px;
 float: left;
-background: #00CACA;
+background: #5898ff;
 border-right: 1px solid white;
 }
 
@@ -42,7 +42,7 @@ position:relative;
 height: 40px;
 width:50%;
 float:left;
-background:#00CACA;
+background:#5898ff;
 }
 
 a{

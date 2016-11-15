@@ -1,6 +1,6 @@
 'use strict';
 angular.module('myApp.services')
-    .factory('Artical',function(ENV,$resource, $rootScope,$log,$http, $q,Storage){
+    .factory('Artical',function(ENV,$resource,$rootScope,$log,$http, $q,Storage){
         //查询商家列表
         //var getActivitys = function() {
         //    var serveurl = ENV.api+"/article_list2.json";
@@ -279,7 +279,7 @@ angular.module('myApp.services')
               var hasNext=true;
               if(response.status==200) {
                 $log.debug('获得的所有文章第一页数据:', response);
-                if(response.data.length<20){
+                if(response.data.length<=20){
                     hasNext=false;
                 }
                 allBusiness={                   //存储信息
@@ -287,6 +287,9 @@ angular.module('myApp.services')
                   'businessDate':response.data,
                   'nextPage':2
                 }
+                $rootScope.$broadcast("scroll.refreshComplete");
+                $rootScope.$broadcast("allBusiness.businessUpdated");
+                console.log("获取完第一页之后的allBusiness数据为："+allBusiness.hasNext);
 
                 d.resolve(response.data);
               }
@@ -307,9 +310,9 @@ angular.module('myApp.services')
           //   return allBusienss.businessDate;
           // },
           getMoreBusiness:function(){
-            var nextPage = allBusienss.nextPage;         //下一页的页数
-            var hasNext = allBusienss.hasNext;         //是否还有下一页
-            var portalsData = allBusienss.businessDate;      //下一页数据
+            var nextPage = allBusiness.nextPage;         //下一页的页数
+            var hasNext = allBusiness.hasNext;         //是否还有下一页
+            var portalsData = allBusiness.businessDate;      //下一页数据
 
             var d = $q.defer();
             var promise = d.promise;
@@ -327,6 +330,7 @@ angular.module('myApp.services')
                 $log.debug('获得的所有文章下一页的数据:', response);
                 portalsData=portalsData.concat(response.data);
                 console.log("第二页以及第二页之后的商家数据为："+portalsData);
+
                 if(response.data.length<20){
 
                   hasNext=false;
@@ -336,7 +340,7 @@ angular.module('myApp.services')
                   'businessDate':portalsData,
                   'nextPage':nextPage++
                 }
-                
+
                 d.resolve(response.data);
               }
               else{
@@ -348,6 +352,18 @@ angular.module('myApp.services')
             })
             return promise;
           },
+          //去的所有商家对象的数据
+          getPortals: function() {
+           return allBusiness.businessDate;
+          },
+
+          //是否还有下一页
+          isHasNext: function(){
+            if(allBusiness === undefined){
+              return false;
+            }
+            return allBusiness.hasNext;
+          }
         }
 
 
