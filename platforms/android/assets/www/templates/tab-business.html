@@ -1,5 +1,5 @@
 <ion-view>
-    <ion-header-bar align-title="center" class="bar-light">
+    <ion-header-bar align-title="center" class="bar-positive">
         <h1 class="title">全部商家</h1>
     </ion-header-bar>
 
@@ -8,6 +8,11 @@
       <!--下拉刷新-->
       <ion-refresher 	on-refresh="doRefresh()" spinner="android" distance="10%">
       </ion-refresher>
+
+      <div ng-if="false" style="margin-top:60px; text-align: center">
+
+        <ion-spinner icon="ios" style="height: 60px; width: 60px;;"></ion-spinner>
+      </div>
 
         <!--<div  style="text-align: center" id="business_type"><a class="a_estimate" style="color: #000000 ">旅游</a></div>-->
         <!--<div style="text-align: center" id="business_distance"><a class="a_collect" style="color: #000000">3km</a></div>-->
@@ -43,9 +48,8 @@
           <p><i style="color: #02c69e;font-size: medium">{{business.article.priceText}}</i>起</p>
         </a>
 
-
-
-
       </div>
+       <!--上拉刷新-->
+      <ion-infinite-scroll icon="ion-load-d"  on-infinite="loadMore()" distance="1%" ng-if="moreDataCanBeLoaded()" immediate-check="true"></ion-infinite-scroll>
     </ion-content>
 </ion-view>

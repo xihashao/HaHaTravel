@@ -33,6 +33,12 @@
         },
         "cordova-plugin-file-transfer": {
             "PACKAGE_NAME": "com.ionicframework.testuploadpic445308"
+        },
+        "wang.imchao.plugin.alipay": {
+            "PARTNER_ID": "2088321042886972",
+            "SELLER_ACCOUNT": "2116517850@qq.com",
+            "PRIVATE_KEY": "MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAMcSaxoScSaluWMsm15qCDZ28t9u1fxhQ3C1O3bHsnypJVJmOPemduBXqrNrY9Jtvg2Hyx+iMCWglyA8Hnv5NUg+HDWKkivXUwLC/A9kD4aRH+ZZPeZnVjfNebdopCDr1nOC5WKxu2VI5IU4570vwGx+IYtF/a8DNYrbsH93Y2WtAgMBAAECgYAbMGnOYsxvgd0DLZl+2K6MecyMNcAmO0aRwz7+5yF6o0OEsI+BS4wa8f5PiRBWMkTt5ikZBfbbfMaHUY68UfozyQe5Qpv2yj1I0G7jIEAxELulS3P5xsjnHMmGdtQBZM2pGZSbANcyAPxzE36WUA0a5iCgoSeSxOK4UqDTX6EuRQJBAOtUNLqVRiCcrwhnXLt9ETgABZAuJZg17zz1iJXNQw3vrleai4QVI27XY3dFvtEkoRejcbHa57hsMA9/R3EVAzMCQQDYjuixaGwoQLFuV2RKRK9+kgU/bgqTY7m+hAhf97jOdK/a594Hk7M/BoYAZCMS660bLF4cYZYsK55tUkCBf/OfAkEAgjHKIlgnvi8xXzLgSRI+jn7klQoS3o0oWM92y3oOWQ17pRfpjB+txMsBSqGZmlfrkAprAn0bqhqg1FIUkmmPpQJBAMGOecyXWJRhvjSxR6JZ4cFvIeGfqTQzXkE6IYIlF7jv8n3l4D1FdmBOpFaVKgQvQXmYHkWfs2mnUuLDMYSNqGECQAeZZSNT1N883rbHfknRjZ2xKTVt32tdYZCq2vdZ9fVIOFmfCwQsejZ9YWt3/hrMbuEq+7l7/2ev4xhBN0hd3HE=",
+            "PACKAGE_NAME": "com.ionicframework.testuploadpic445308"
         }
     },
     "dependent_plugins": {

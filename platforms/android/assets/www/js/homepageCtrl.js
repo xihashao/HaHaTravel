@@ -33,7 +33,7 @@ angular.module('myApp.controllers')
                $scope.recommendFood=response;
              }
            },function(err){
-              alert("获取推荐失败！");
+             console.log("获取推荐失败");
 
            })
        };
@@ -56,10 +56,13 @@ angular.module('myApp.controllers')
 
     //  下拉刷新
       $scope.doRefresh = function() {
-        $interval(function(){
-          $window.location.reload();
-          },900)
+        // $interval(function(){
+        //   $window.location.reload();
+        //   },300)
 
+        $scope.getRecommend(31);
+        $scope.getRecommend(32);
+        $scope.getRecommend(33);
         // $location.path('/homepage');
 
         $scope.$broadcast("scroll.refreshComplete");

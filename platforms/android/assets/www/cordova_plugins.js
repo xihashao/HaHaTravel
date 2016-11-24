@@ -200,6 +200,13 @@ module.exports = [
         "clobbers": [
             "window.FileTransfer"
         ]
+    },
+    {
+        "file": "plugins/wang.imchao.plugin.alipay/www/alipay.js",
+        "id": "wang.imchao.plugin.alipay.alipay",
+        "clobbers": [
+            "alipay"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -214,7 +221,8 @@ module.exports.metadata =
     "cordova-plugin-image-picker": "1.1.1",
     "cordova-plugin-compat": "1.0.0",
     "cordova-plugin-file": "4.2.0",
-    "cordova-plugin-file-transfer": "1.5.1"
+    "cordova-plugin-file-transfer": "1.5.1",
+    "wang.imchao.plugin.alipay": "0.9.0"
 };
 // BOTTOM OF METADATA
 });
